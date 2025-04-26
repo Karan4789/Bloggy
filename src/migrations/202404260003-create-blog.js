@@ -27,7 +27,7 @@ module.exports = {
       },
       category_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true, // <== this is IMPORTANT
         references: {
           model: 'category',
           key: 'category_id'
